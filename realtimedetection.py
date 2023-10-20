@@ -8,7 +8,7 @@ cap.set(4, 640)
 
 
 # model
-model = YOLO("D:/potholemoov3/PotholeOutput/runs/detect/train/weights/best.pt")
+model = YOLO("best.pt")
 
 # object classes
 classNames = ["Potholes"

@@ -10,7 +10,7 @@ input_path = "D:/potholemoov3/TestData/test2.mp4"
 output_directory = "D:/potholemoov3/pyoutput/"
 
 # model
-model = YOLO("D:/potholemoov3/PotholeOutput/runs/detect/train/weights/best.pt")
+model = YOLO("best.pt")
 
 # object classes
 classNames = ["Potholes"]
