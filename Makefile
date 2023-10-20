@@ -1,24 +1,30 @@
-# Virtual environment setup
-VENV_DIR = venv
-VENV_ACTIVATE = $(VENV_DIR)/bin/activate
+PYTHON = python
 
-.PHONY: all clean run
+# Target: default (all)
+all: setup run
 
-all: $(VENV_ACTIVATE)
+# Target: setup (install dependencies)
+setup:
+	$(PYTHON) -m pip install ultralytics
+	$(PYTHON) -m pip install opencv-python
+	$(PYTHON) -m pip install geopy
 
-# Create virtual environment
-$(VENV_ACTIVATE):
-	python3 -m venv $(VENV_DIR) && \
-		. $(VENV_ACTIVATE) && \
-		pip install --upgrade pip && \
-		pip install -r requirements.txt
+# Target: run the Python code
+run:
+	$(PYTHON) sampledetection.py
 
-# Run the script
-run: $(VENV_ACTIVATE)
-	. $(VENV_ACTIVATE) && \
-	python3 YOLO_detection.py
-
-# Clean up
+# Target: clean generated files
 clean:
-	rm -rf $(VENV_DIR)
+	# Add commands to clean any generated files or artifacts here, if any
+	# For example: rm -f *.o output.txt
 
+# Target: help (display Makefile targets)
+help:
+	@echo "Available targets:"
+	@echo "  make setup      : Install dependencies"
+	@echo "  make run        : Run the Python script"
+	@echo "  make clean      : Clean generated files"
+	@echo "  make help       : Display this help message"
+
+# PHONY targets (targets that are not files)
+.PHONY: all setup run clean help

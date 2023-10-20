@@ -4,7 +4,7 @@ import math
 from ultralytics import YOLO
 
 # Specify the path to the video file or image file
-input_path = "D:/potholemoov3/TestData/test2.mp4"
+input_path = "test3.mp4"
 
 # Output directory for saving results
 output_directory = "D:/potholemoov3/pyoutput/"
