@@ -1,0 +1,13 @@
+[
+    {
+        "pothole_id": 1,
+        "info": {
+            "latitude": "28.510319",
+            "longitude": "77.0530094",
+            "vehicle_registration_number":1234,
+            "area": "sector-23, Gurgaon, Haryana",
+            "area_type": "urban",
+            "time_of_capture": "18-10-2023T14:55:00"
+        }
+    }
+]
