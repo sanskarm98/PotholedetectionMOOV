@@ -1,4 +1,4 @@
-
+POTHOLE DETECTION THROUGH LIVE-FEED
 
 Run make run, it will create a virtual environment (if not already created), activate it, 
 install the required dependencies, and finally run your Python script.
