@@ -9,7 +9,7 @@ all: setup run
 # Target: setup (install dependencies and create output folder)
 setup:
 	$(PYTHON) -m pip install -r $(REQUIREMENTS_FILE)
-	mkdir -p $(OUTPUT_FOLDER)
+	mkdir $(OUTPUT_FOLDER)
 
 # Target: run the Python code
 run:
