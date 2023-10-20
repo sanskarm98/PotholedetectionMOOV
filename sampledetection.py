@@ -7,7 +7,7 @@ from ultralytics import YOLO
 input_path = "test3.mp4"
 
 # Output directory for saving results
-output_directory = "D:/potholemoov3/pyoutput/"
+output_directory = "output/"
 
 # model
 model = YOLO("best.pt")
